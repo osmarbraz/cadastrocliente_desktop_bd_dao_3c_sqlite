@@ -145,7 +145,6 @@ public class CtrCliente {
         } else {
             getFrmCliente().mostrarMensagem("Exclusao nao realizada!");
         }
-
     }
 
     void jBLimpar_actionPerformed(ActionEvent e) {
