@@ -16,8 +16,6 @@ import javax.swing.JOptionPane;
  * Classe que implementa a interface principal do sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-abr-2020 22:00:00
  */
 @SuppressWarnings("serial")
 public class FrmCliente extends JFrame {
