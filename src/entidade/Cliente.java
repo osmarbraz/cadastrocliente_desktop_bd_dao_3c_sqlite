@@ -10,8 +10,6 @@ import dao.Factory;
  * Classe que representa a abstração principal do sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-abr-2020 22:00:00
  */
 public class Cliente {
 
@@ -125,7 +123,7 @@ public class Cliente {
     }
 
     /**
-     * Exclui um objeto da persist�ncia atrav�s do identificado.
+     * Exclui um objeto da persistência através do identificado.
      */
     public int excluir() {
         DAOFactory factory = DAOFactory.getDAOFactory(Factory.FABRICA);
@@ -135,7 +133,7 @@ public class Cliente {
 
     /**
      * Retorna uma lista de objetos que atende os valores passados pelo objeto.
-     * O Id realiza compara��o e o nome realiza uma compara��o parcial.
+     * O Id realiza comparação e o nome realiza uma comparação parcial.
      */
     public List aplicarFiltro() {
         DAOFactory factory = DAOFactory.getDAOFactory(Factory.FABRICA);

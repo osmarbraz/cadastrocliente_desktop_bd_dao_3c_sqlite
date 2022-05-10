@@ -4,8 +4,6 @@ package dao.cliente;
  * Armazena os metadados para a implementação em SQLite.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-abr-2020 22:00:00
  */
 public interface SQLiteClienteMetaDados {
 

@@ -14,8 +14,6 @@ import dao.Factory;
  * Classe que realiza a interação entre a interface e a entidade do sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-abr-2020 22:00:00
  */
 public class CtrCliente {
 

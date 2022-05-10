@@ -66,7 +66,7 @@ public class FrmCliente extends JFrame {
         jBFechar = new JButton();
 
         contentPane.setLayout(null);
-        this.setSize(new Dimension(310, 220));
+        this.setSize(new Dimension(310, 230));
         this.setTitle("Cadastro de Cliente");
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {

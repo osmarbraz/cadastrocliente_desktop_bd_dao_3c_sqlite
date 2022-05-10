@@ -1,11 +1,9 @@
 package util;
 
 /**
- * Classe utilitaria para conter operações de validação
+ * Classe utilitária para conter operações de validação
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-abr-2020 22:00:00
  */
 public class Valida {
 
@@ -33,14 +31,14 @@ public class Valida {
             digitos = cpf.substring(9, 11);
             int soma = 0, mult = 11;
             int[] var = new int[11];
-            // Recebe os n�meros e realiza a multiplica��o e soma.   
+            // Recebe os números e realiza a multiplicaçã e soma.   
             for (int i = 0; i < 9; i++) {
                 var[i] = Integer.parseInt("" + cpf.charAt(i));
                 if (i < 9) {
                     soma += (var[i] * --mult);
                 }
             }
-            // Cria o primeiro d�gito verificador.   
+            // Cria o primeiro dígito verificador.   
             int resto = soma % 11;
             if (resto < 2) {
                 var[9] = 0;
@@ -50,11 +48,11 @@ public class Valida {
             // Reinicia os valores.   
             soma = 0;
             mult = 11;
-            // Realiza a multiplica��o e soma do segundo d�gito.   
+            // Realiza a multiplicação e soma do segundo dígito.   
             for (int i = 0; i < 10; i++) {
                 soma += var[i] * mult--;
             }
-            // Cria o segundo d�gito verificador.   
+            // Cria o segundo dígito verificador.   
             resto = soma % 11;
             if (resto < 2) {
                 var[10] = 0;

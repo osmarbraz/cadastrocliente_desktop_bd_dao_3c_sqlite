@@ -6,8 +6,6 @@ import controle.CtrCliente;
  * sistema.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-abr-2020 22:00:00
  */
 public class Principal {
 
@@ -20,6 +18,5 @@ public class Principal {
 
         CtrCliente controle = new CtrCliente();
         controle.executar();
-
     }
 }

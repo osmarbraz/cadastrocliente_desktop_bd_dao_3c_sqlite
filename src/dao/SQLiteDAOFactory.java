@@ -14,8 +14,6 @@ import dao.cliente.SQLiteClienteDAO;
  * SQLite.
  *
  * @author osmarbraz
- * @version 1.0
- * @updated 19-abr-2020 22:00:00
  */
 public class SQLiteDAOFactory extends DAOFactory {
 
