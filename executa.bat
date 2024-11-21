@@ -1,6 +1,6 @@
 @echo off
 
-if exist bin (
+if exist target\classes (
 	echo  *** Executando projeto ***
-	java -cp lib/sqlite-jdbc-3.30.1.jar;bin Principal
+	java -cp target\classes Principal
 )
