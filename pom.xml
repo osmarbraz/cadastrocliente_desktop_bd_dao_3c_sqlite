@@ -4,6 +4,8 @@
     <groupId>com</groupId>
     <artifactId>cadastrocliente_desktop_bd_dao_3c_sqlite</artifactId>
     <version>1.0-SNAPSHOT</version>
+    
+    <!-- propriedades do projeto --> 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -22,6 +24,7 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>3.46.0.1</version>
         </dependency>
+        
          <!-- Dependência SQLite -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -33,8 +36,8 @@
     
     <build>
         <!-- Plugins do Maven -->
-        <plugins>
-            <!-- Configura o programa principal do projeto -->
+        <plugins>            
+            <!-- Plugin de geração do jar com as dependências -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -45,6 +48,7 @@
                             <goal>single</goal>
                         </goals>
                         <configuration>
+                            <!-- Configura o arquivo de manifesto com a classe principal do projeto -->
                             <archive>
                                 <manifest>
                                     <mainClass>
@@ -52,6 +56,7 @@
                                     </mainClass>
                                 </manifest>
                             </archive>
+                            <!-- Gera um novo jar com as dependências -->
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
